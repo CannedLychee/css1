@@ -3,16 +3,24 @@
 <head>
 	<title>IFE ECMAScript</title>
 	<link rel="stylesheet" href="./demo.css" />
-	<script>
-		let flg=false
-	</script>
 </head>
 <body>
 	<div class="wrap">
-		<div class="title">Demo</div>
-		<button id="trans" >trans</button>
+		<p>Demo</p>
+		<span></span>
+		<div id="trans" >trans</div>
 	</div>
 	<script>
+		var trans = document.getElementById('trans')
+		var p = document.getElementsByTagName('p')[0]
+		var span = document.getElementsByTagName('span')[0]
+		let flag = false
+		trans.onclick = function() {
+			p.className = flag==true? "":"p-after"
+			span.className = flag==true? "":"span-after"
+			flag = !flag
+			console.log(1)
+		}
 	</script>
 </body>
 </html>
