@@ -1,0 +1,29 @@
+.wrap {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+@keyframes animation_title{
+	from{
+		color: blue;
+	}
+	to{
+		color: black;
+	}
+}
+
+.title {
+	font-size: 30px;
+	color: blue;
+	animation: animation_title 3s;
+}
+
+
+button {
+	margin-top: 20px;
+}
+
